@@ -23,10 +23,10 @@ jobs:
           npm install
           
       - name: Set up environment variables
-        env:
-          DB_HOST: ${{ secrets.DB_HOST }}
-          API_KEY: ${{ secrets.API_KEY }}
-          ORG: ${{ secrets.ORG }}
+        run: |
+          echo "DB_HOST=${{ secrets.DB_HOST }}" >> $GITHUB_ENV
+          echo "API_KEY=${{ secrets.API_KEY }}" >> $GITHUB_ENV
+          echo "ORG=${{ secrets.ORG }}" >> $GITHUB_ENV
 
       - name: Run back-end
         run: |
