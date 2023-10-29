@@ -371,9 +371,6 @@ describe('Chat', () => {
         privado: true
       })
       .set('Authorization', `Bearer ${token}`)
-
-    console.log(response)
-
   })
 })
 

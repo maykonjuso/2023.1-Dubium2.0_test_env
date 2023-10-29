@@ -8,7 +8,6 @@ const openaiService = require("../service/openaiService.js")
 require('dotenv').config()
 
 const criarPergunta = async (req, res) => {
-    console.log("KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK", process.env.API_KEY)
     const { titulo, curso, conteudo, filtro, idUser } = req.body
     const idUsuario = idUser
     let conteudoPergunta = `${filtro}, ${titulo}, ${conteudo}`
