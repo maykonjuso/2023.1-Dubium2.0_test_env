@@ -392,7 +392,7 @@ afterAll( async () => {
 
   //retira o usuário de teste do banco de dados
 //  await excluirUsuario('usuario_teste@gmail.com')
-
+//test
 
 })
 
